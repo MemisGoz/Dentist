@@ -2,7 +2,14 @@ import Feature1 from "./componnents/home/feature1";
 import Feature2 from "./componnents/home/feature2";
 import Hero from "./componnents/home/Hero";
 import About from "./componnents/home/about";
+import CardsImport from "./componnents/home/Cards";
+import Review from "./componnents/home/review";
+
+
 export default function Home() {
+
+
+ 
   return (
     <div>
       <Hero />
@@ -21,6 +28,10 @@ export default function Home() {
        linkText={"Meet our team"}
        linkHref={"/our-team"}
        features={["team", "team",]} />
+
+       <CardsImport />
+       <Review />
+     
     </div>
   );
 }
