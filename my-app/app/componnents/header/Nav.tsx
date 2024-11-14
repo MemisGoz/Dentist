@@ -45,9 +45,9 @@ export default function Nav() {
   
   return (
     <motion.div
-      className="w-full py-8 fixed z-50 "
+      className="w-full py-12 fixed z-50 "
       style={{
-        backgroundColor: isScrollingUp ? 'rgba(228, 228, 228, 1)' : 'rgba(228, 228, 228, 1))', // Black when scrolling up, transparent at the top
+        backgroundColor: isScrollingUp ? 'rgba(0, 0, 0, 1)' : 'rgba(0, 0, 0, 0)', // Black when scrolling up, transparent at the top
       }}
       animate={isHidden ? "hidden" : "visible"}
       variants={{
@@ -56,7 +56,7 @@ export default function Nav() {
       }}
       transition={{ duration: 0.2 }}
     >
-      <div className="max-w-[100rem] mx-auto text-blue-700 font-semibold">
+      <div className="max-w-[100rem] mx-auto text-blue-200 font-semibold">
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-4xl">World Dentist</h1>

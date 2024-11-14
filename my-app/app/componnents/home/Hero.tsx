@@ -17,16 +17,19 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0vh", "100vh"]);
 
   return (
-    <div ref={container} className="h-screen overflow-hidden bg-gray-800 bg-opacity-70">
+    <div ref={container} className="h-screen overflow-hidden ">
       <motion.div style={{ y }} className="relative h-full ">
+        
         <div className='absolute h-screen w-screen bg-[#0E384C] opacity-70 z-10' />
         <Image
           src="https://demo.awaikenthemes.com/html-preview/dentaire/images/hero-bg.jpg"
           fill
           alt="image"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover",}}
         />
+         
       </motion.div>
+     
     </div>
   );
 }
